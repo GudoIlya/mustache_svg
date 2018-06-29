@@ -851,7 +851,7 @@ var svgBoxPlot = (function(){
 			innerString.style.opacity = '0.9';
 			descriptionInnerHTML.appendChild(innerString);
 			innerString.addEventListener('mouseover', function() {
-				alert(floatingDescriptionDivId);
+				//alert(floatingDescriptionDivId);
 			var display         = _getStyle(floatingDescriptionDiv, 'display');
 				if( display == 'none' ) {
 					floatingDescriptionDiv.style.display='block';
