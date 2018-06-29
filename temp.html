@@ -1,0 +1,53 @@
+<div class="svgWrapper">
+<svg width="900" height="500" 
+     viewPort="0 0 120 120" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+    <!--<line x1="0" 
+          y1="0" x2="0" y2="500"
+          stroke="black" />
+
+	<line x1="0" 
+          y1="500" x2="900" y2="500"
+          stroke="black" />
+	<rect fill="none" x="10" y="10" width="890" height="490">
+	-->
+	<!-- Поле Rect основное -->
+	<rect class="main_wrapper_rect" fill="none" x="0" y="0" width="900"/>
+	<!-- Внутреннее поле Rect -->
+	<rect fill="none" x="40" y="0" width="860" height="460" />
+	<g transform="translate(40, 0)">
+
+		<g id="plotPrototype">
+			<!-- top horizontal -->
+			<path fill="white" stroke="black" stroke-width="1" d="M 54 50 L 54 50 L 66 50 z" />
+			<!-- top vertical-->
+			<path fill="white" stroke="black" stroke-width="1" d="M 60 50 L 60 100 z" />
+
+			<!-- Square -->
+			<path fill="white" stroke="black" stroke-width="1" d="M 10 100 l 0 100 l 100 0 L 110 100 z" />
+			
+			<!-- Middle -->
+			<path fill="white" stroke="black" stroke-width="1" d="M 10 150 L 110 150  z" />
+			<!-- bottom vertical -->
+			<path fill="white" stroke="black" stroke-width="1" d="M 60 200 L 60 200 L 60 250 z" />
+			<!-- bottom horizontal -->
+			<path fill="white" stroke="black" stroke-width="1" d="M 54 250 L 54 250 L 66 250 z" />
+		</g>
+
+		<use x="110" y="20" xlink:href="#plotPrototype" />
+		<use x="220" y="-20" xlink:href="#plotPrototype" />
+		<use x="330" y="50" xlink:href="#plotPrototype" />
+		<use x="440" y="100" xlink:href="#plotPrototype" />
+
+		<path fill="white" stroke="black" stroke-width="1" d="M 0 460 L 0 460 L 900 460 z" />
+		<path fill="white" stroke="black" stroke-width="1" d="M 0 0 L 0 0 L 0 460 z" />
+
+	</g>
+<text x="0" y="10" font-family="Verdana" font-size="12">Text</text>
+<text x="0" y="460" font-family="Verdana" font-size="12">Text</text>
+	<!--
+
+	-->
+<text x="80" y="480" font-family="Verdana" font-size="12">Text</text>	
+</svg>
+</div>

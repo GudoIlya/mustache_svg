@@ -1,0 +1,77 @@
+.svgWrapper{
+	width:900px;
+	height:500px;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.colorElement{
+	fill : #e6f2ff;
+	stroke: #4da6ff;
+	stroke: black;
+	stroke-width: 1.5;
+}
+.axis{
+	stroke: #999999;
+	stroke-width: 1;
+}
+.horizontalRow{
+	stroke-width: 0.3;
+	stroke : gray;
+}
+.infoLayerDiv{
+	display: none;
+	z-index: 9999;
+}
+.infoSquare{
+	fill:  #ffe6e6;
+	color:white;
+	stroke: #ff0000;
+	stroke-width: 2;
+	opacity: 1;
+	z-index: 9999;
+	position: absolute;
+}
+.oneItemElementG{
+	position: relative;
+	z-index: 1;
+}
+#svgBoxPlot{
+	position: relative;
+	z-index: 1;
+}
+#svgBoxPlot{
+	z-index: 2;
+}
+#mustacheDescriptionDiv{
+	position: absolute;
+	z-index:222;	
+}
+#mustacheDescriptionDivInner{
+	display: none;
+}
+#mustacheDescriptionHideShowButton{
+	display:block;
+	padding:4px;
+	text-align: center;
+	border: 1px solid black;
+	background: #eee;
+	opacity: 0.8;
+	color: black;
+	margin: 0px;
+	outline : none;
+}
+#mustacheDescriptionHideShowButton:hover{
+	color:white;
+	background: black;
+	transition: 0.61s;
+}
+#mustacheDescriptionTable{
+	opacity: 1;
+	border-collapse: collapse;
+}
+#mustacheDescriptionTable td{
+	padding: 10px 10px;
+	border-collapse: collapse;
+	font-family: Times New Roman;
+}

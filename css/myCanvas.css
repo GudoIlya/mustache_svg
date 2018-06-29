@@ -1,0 +1,23 @@
+.mustacheGraph{
+	width:1000px;
+	height:500px;
+	margin:0 auto;
+	border:1px solid black;
+}
+.svgWrapper{
+	width:900px;
+	height:500px;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.colorElement{
+	fill : #e6f2ff;
+	stroke: #4da6ff;
+	stroke-width: 2;
+}
+.axis{
+	stroke: #999999;
+	stroke-width: 1;
+}
+

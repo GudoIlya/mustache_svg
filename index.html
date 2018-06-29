@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пробуем элемент Canvas</title>
+	<link rel="stylesheet" type="text/css" href="css/BoxPlotSvg.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=edge" >
+	<meta charset="utf-8">
+</head>
+<body>
+<div id="for_arrays"></div>
+<div id="svgBoxPlot" class="svgWrapper"></div>
+<script type="text/javascript" src="js/svgBoxPlot.js"></script>
+<script type="text/javascript">
+	var data1 = ['Первый', 1,2,3,4,5,6,7,8,9,10];
+	var data2 = ['Второй', 2,3,4,5,6,7,8,9,10,11];
+	function getRandom(m,n){
+		return Math.floor(Math.random()*(n-m+1))+m;
+	}
+	data1 = ['ОТКОРМ 1'];
+	data2 = ['ОТКОРМ 2'];
+	data3 = ['ОТКОРМ 3'];
+	data4 = ['ОТКОРМ 4'];
+	data5 = ['ОТКОРМ 5'];
+	data6 = ['ОТКОРМ 6'];
+	/* Генерируем случайные данные */
+	for(var i=0; i<10; i++) {
+		var number = getRandom(400, 800);
+		var number2 = getRandom(200,500);
+		var number3 = getRandom(300,600);
+		var number4 = getRandom(200,400);
+		var number5 = getRandom(300,800);
+		var number6 = getRandom(500,700);
+		data1.push(number);
+		data2.push(number2);
+		data3.push(number3);
+		data4.push(number4);
+		data5.push(number5);
+		data6.push(number6);
+	}
+	/* Если хотим посмотреть, что за данные получились, раскомментируем строку do... */
+	var string= "data1 = "+data1.join(' ,')+"<br>"+"data2 = "+data2.join(' ,')+"<br>"+"data3 = "+data3.join(' ,')+"<br>"+"data4 = "+data4.join(' ,');
+	//document.getElementById('for_arrays').innerHTML = string;
+	var data = [
+		data1,
+		data2,
+		data3,
+		data4,
+		data5,
+		data6
+	];
+	/*
+	data1 = ['Вес с убоя с холодного', 100.80, 101.70, 90.50, 96.10, 89.10, 95.20, 100.10, 88.90, 105.90, 103.80, 120.50, 93.90, 104.90,
+ 	113.20, 101.10, 93.90, 92.30, 101.20, 99.50, 93.10, 118.60, 100.00, 94.40, 99.60, 109.60, 97.70, 105.90, 114.90, 97.60];
+ 	data2 = ['Вес с убоя с холодного', 100.80, 101.70, 90.50, 96.10, 89.10, 95.20, 100.10, 88.90, 105.90, 103.80, 120.50, 93.90, 104.90,
+ 	113.20, 101.10, 93.90, 92.30, 101.20, 99.50, 93.10, 118.60, 100.00, 94.40, 99.60, 109.60, 97.70, 105.90, 114.90, 97.60];
+	var data= [data1, data2];
+	data3 = ['Вес с убоя с холодного', 100.80, 101.70, 90.50, 96.10, 89.10, 95.20, 100.10, 88.90, 105.90, 103.80, 120.50, 93.90, 104.90,
+ 	113.20, 101.10, 93.90, 92.30, 101.20, 99.50, 93.10, 118.60, 100.00, 94.40, 99.60, 109.60, 97.70, 105.90, 114.90, 97.60];
+	var data= [data1, data2, data3];
+	
+	/*
+	var data1 = ['Первый', 1,2,3,4,5,6,7,8,9,10];
+	var data2 = ['Второй', 2,3,4,5,6,7,8,9,10,11];
+	data = [data1, data2];*/
+	svgBoxPlot.initBoxPlot("svgBoxPlot", data);
+
+</script>
+
+</body>
+</html>
